@@ -1,4 +1,4 @@
-# Simple contact tiny app
+# Simple contact app
 
 * You can add/remove contact from contact list. 
 * Everything is based on an array of objects (one person represents one object in array).
