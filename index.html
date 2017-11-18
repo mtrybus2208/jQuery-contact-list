@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Add Contact</title>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
+    </head>
+
+    <body>
+
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 class="">Add Contact</h1>
+                    <a class="modal-trigger waves-effect waves-light btn-large" href="#modal1"><i class="material-icons right">add</i>Add contact</a>
+                </div>
+            </div>
+            <div class="row table-row">
+                <table class="highlight responsive-table striped">
+                    <thead>
+                    <tr>
+                        <th data-field="id">#</th>
+                        <th data-field="image">Image</th>
+                        <th data-field="name">First Name</th>
+                        <th data-field="lastName">Last Name</th>
+                        <th data-field="email">Email</th>
+                        <th colspan="2" data-field="phone">Phone Number</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <div class="row">
+                        <form id="addContactForm" class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="first_name" type="text" class="validate" required>
+                                    <label for="first_name" data-error="Invalid value!" data-success="Ok!">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="last_name" type="text" class="validate" required>
+                                    <label for="last_name" data-error="Invalid value!" data-success="Ok!">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="user_email" type="email" class="validate" required>
+                                    <label for="user_email" data-error="Invalid value!" data-success="Ok!">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="phone_number" type="text" class="validate" required>
+                                    <label for="phone_number" data-error="Invalid value!" data-success="Ok!">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input id="file_path" class="file-path validate" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a id="remove-contact" href="#!" class="modal-action modal-close waves-effect btn red">Cancel</a>
+                    <a id="add-contact" href="#!" class="modal-action waves-effect btn">Add</a>
+                </div>
+            </div>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+        $('.modal').modal();
+    </script>
+    </body>
+  </html>

@@ -1,0 +1,38 @@
+h1 {
+    margin: 40px 0;
+}
+table img {
+    width: 50px;
+}
+.table-row {
+    padding: 40px 25px 0 25px;
+}
+.modal-footer a {
+    display: inline-block;
+    margin-left: 20px !important;
+}
+.modal-content h4 {
+    padding: 0 1.5rem;
+}
+.modal-content form {
+    margin-top: 30px;
+}
+/*----------VALIDATION----------------*/
+input:not([type]) + label:after, input[type=text] + label:after, input[type=password] + label:after, input[type=email] + label:after, input[type=url] + label:after, input[type=time] + label:after, input[type=date] + label:after, input[type=datetime-local] + label:after, input[type=tel] + label:after, input[type=number] + label:after, input[type=search] + label:after, textarea.materialize-textarea + label:after {
+    top: 35px !important;
+    font-size: 0.8rem !important;
+}
+.input-field label.active::after {
+    font-size: 0.8rem !important;
+    top: 59px !important;
+}
+textarea.materialize-textarea + label:after {
+    top: 71px !important;
+}
+textarea.materialize-textarea + label.active:after {
+    top: 95px !important;
+}
+form .alert-success {
+    color: #4CAF50;
+    margin-left: 3rem;
+}
